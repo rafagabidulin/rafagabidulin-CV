@@ -1,11 +1,14 @@
 import React from 'react';
 import { Button, Container, Navbar } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => (
-  <Navbar variant='dark' className='bg-dark'>
+  <Navbar variant='dark' className='bg-black col-12 py-3'>
     <Container className='d-flex align-items-center h-100'>
-      <div className='w-25 '>
-        <Navbar.Brand>RafaGabidulin</Navbar.Brand>
+      <div>
+        <NavLink to='/' className='text-decoration-none'>
+          <Navbar.Brand>RafaGabidulin</Navbar.Brand>
+        </NavLink>
       </div>
       <div>
         <Button variant='primary'>Light</Button>
