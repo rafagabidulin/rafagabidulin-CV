@@ -3,4 +3,5 @@ export default interface ISkill {
   title: string;
   id: string;
   logo: string;
+  text: string;
 }
