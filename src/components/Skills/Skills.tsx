@@ -11,9 +11,9 @@ const Skills: FC<ISkills> = ({ skills }) => (
           <h1 className='text-center text-md-start'>Навыки</h1>
         </Col>
       </Row>
-      <Row className='row-cols-auto justify-content-center pt-5'>
-        {skills.map(({ id, logo, category }) => (
-          <Skill key={id} id={id} category={category} logo={logo} title={id} />
+      <Row className='row-cols-5 justify-content-center pt-3 mx-5'>
+        {skills.map(({ id, logo, category, text }) => (
+          <Skill key={id} id={id} category={category} logo={logo} title={id} text={text} />
         ))}
       </Row>
     </Container>

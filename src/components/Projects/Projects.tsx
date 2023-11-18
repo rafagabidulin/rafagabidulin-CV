@@ -11,7 +11,7 @@ const Projects: FC<IProjects> = ({ projects }) => (
           <h1 className='text-center text-md-start'>Проекты</h1>
         </Col>
       </Row>
-      <Row>
+      <Row className='mx-3'>
         {projects.map(({ name, description, link }) => (
           <Project key={name} name={name} description={description} link={link} />
         ))}

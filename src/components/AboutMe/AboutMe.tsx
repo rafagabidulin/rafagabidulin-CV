@@ -6,13 +6,7 @@ const AboutMe = () => {
   const now = new Date();
   const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
   const dob = new Date(1994, 10, 28);
-  const dobnow = new Date(today.getFullYear(), dob.getMonth(), dob.getDate());
-  let age: number;
-
-  age = today.getFullYear() - dob.getFullYear();
-  if (today < dobnow) {
-    age -= 1;
-  }
+  const age = today.getFullYear() - dob.getFullYear();
 
   const plural = (number, titles) => {
     const cases = [2, 0, 1, 1, 1, 2];

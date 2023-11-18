@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const EducationItem = ({ higher }) => {
   console.log('Higher = ', higher);
@@ -32,7 +33,7 @@ const EducationItem = ({ higher }) => {
               ))
             : schools?.map(({ school, courses }) => (
                 <Row key={school} className='d-flex align-items-center mb-4'>
-                  {courses.map(({ id, name, date }) => (
+                  {courses.map(({ id, name, date, link }) => (
                     <Row key={id}>
                       <Col
                         lg={2}
@@ -44,7 +45,9 @@ const EducationItem = ({ higher }) => {
                         lg={4}
                         className='border-start border-end d-flex align-items-center mb-3'
                       >
-                        {name}
+                        <Link to={link} target='_new_blank' className='text-decoration-none'>
+                          {name}
+                        </Link>
                       </Col>
                       <Col lg={6} className='px-5'>
                         <p>
