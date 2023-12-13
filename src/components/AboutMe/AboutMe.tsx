@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Card, Image } from 'react-bootstrap';
 import Contacts from '../Contacts/Contacts';
-import cv from '../../../public/assets/images/CV.JPG';
+import cv from '../../../public/assets/images/CV.jpg';
 
 const AboutMe = () => {
   const now = new Date();
