@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import { Container, Row, Col, Card, Image } from 'react-bootstrap';
 import Contacts from '../Contacts/Contacts';
 
 const AboutMe = () => {
@@ -22,7 +22,7 @@ const AboutMe = () => {
       <Container>
         <Row className='d-flex justify-content-center'>
           <Col lg={4} xxl={3} className='mb-3'>
-            <img src='/assets/images/CV.JPG' alt='cv' width='88%' className='rounded' />
+            <Image src='/assets/images/CV.JPG' alt='cv' width='88%' className='rounded' />
           </Col>
           <Col lg={4} xxl={5} className='px-4'>
             <Row className='d-flex flex-column align-items-center align-items-lg-stretch'>
